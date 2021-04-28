@@ -8,8 +8,8 @@
 
 #import "EncryptBodyAES.h"
 
+#import <Security/Security.h>
 #import <CommonCrypto/CommonCrypto.h>
-#import <AesGcm/IAGAesGcm.h>
 
 #import <UIKit/UIKit.h>
 
@@ -105,14 +105,7 @@
     
     NSData *IV = [self hexStringToData:ivStr];
     NSData *secretKey = [self hexStringToData:secret];
-    
-    IAGCipheredData *cipheredData = [IAGAesGcm cipheredDataByAuthenticatedEncryptingPlainData:expectedPlainData
-                                                              withAdditionalAuthenticatedData:nil
-                                                                      authenticationTagLength:IAGAuthenticationTagLength128
-                                                                         initializationVector:IV
-                                                                                          key:secretKey
-                                                                                        error:nil];
-    
+
     return nil;
 }
 

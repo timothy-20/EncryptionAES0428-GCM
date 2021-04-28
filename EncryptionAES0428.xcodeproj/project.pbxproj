@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		553EA26462A02A88B14D66F2 /* Pods_EncryptionAES0428.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2798F3CC068B67459E124E9 /* Pods_EncryptionAES0428.framework */; };
 		99C779E42639234100872E81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C779E32639234100872E81 /* AppDelegate.m */; };
 		99C779E72639234100872E81 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C779E62639234100872E81 /* SceneDelegate.m */; };
 		99C779EA2639234100872E81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C779E92639234100872E81 /* ViewController.m */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		248EA8AFA2A789E25199844B /* Pods-EncryptionAES0428.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptionAES0428.release.xcconfig"; path = "Target Support Files/Pods-EncryptionAES0428/Pods-EncryptionAES0428.release.xcconfig"; sourceTree = "<group>"; };
 		99C779DF2639234100872E81 /* EncryptionAES0428.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptionAES0428.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C779E22639234100872E81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99C779E32639234100872E81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,8 +32,6 @@
 		99C779F42639234700872E81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99C779FD2639237D00872E81 /* EncryptBodyAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptBodyAES.h; sourceTree = "<group>"; };
 		99C779FE2639237D00872E81 /* EncryptBodyAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptBodyAES.m; sourceTree = "<group>"; };
-		9C96B34597471A381C621E46 /* Pods-EncryptionAES0428.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptionAES0428.debug.xcconfig"; path = "Target Support Files/Pods-EncryptionAES0428/Pods-EncryptionAES0428.debug.xcconfig"; sourceTree = "<group>"; };
-		A2798F3CC068B67459E124E9 /* Pods_EncryptionAES0428.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptionAES0428.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553EA26462A02A88B14D66F2 /* Pods_EncryptionAES0428.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,19 +48,8 @@
 		6553F501426B5E498A989A58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A2798F3CC068B67459E124E9 /* Pods_EncryptionAES0428.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8F0BD79C53F38C8E55FA567C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9C96B34597471A381C621E46 /* Pods-EncryptionAES0428.debug.xcconfig */,
-				248EA8AFA2A789E25199844B /* Pods-EncryptionAES0428.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		99C779D62639234100872E81 = {
@@ -73,7 +57,6 @@
 			children = (
 				99C779E12639234100872E81 /* EncryptionAES0428 */,
 				99C779E02639234100872E81 /* Products */,
-				8F0BD79C53F38C8E55FA567C /* Pods */,
 				6553F501426B5E498A989A58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -125,7 +108,6 @@
 				99C779DB2639234100872E81 /* Sources */,
 				99C779DC2639234100872E81 /* Frameworks */,
 				99C779DD2639234100872E81 /* Resources */,
-				91D7E2182FB7FE43069B73DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,23 +183,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91D7E2182FB7FE43069B73DE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EncryptionAES0428/Pods-EncryptionAES0428-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EncryptionAES0428/Pods-EncryptionAES0428-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EncryptionAES0428/Pods-EncryptionAES0428-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -371,7 +336,6 @@
 		};
 		99C779F92639234700872E81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C96B34597471A381C621E46 /* Pods-EncryptionAES0428.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,7 +354,6 @@
 		};
 		99C779FA2639234700872E81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 248EA8AFA2A789E25199844B /* Pods-EncryptionAES0428.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
