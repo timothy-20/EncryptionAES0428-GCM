@@ -28,7 +28,12 @@
     NSLog(@"random number_%d", randomInt);
 //    Objective c에서 난수를 생성하는데 사용하는 함수.
     
+    NSString *secretKey = [AES generateRandomSecret];
+    NSData *deviceInfo = [AES dictionaryToJSON];
     
+    NSString *encryptedDeviceInfo = [AES encryptDeviceInfo:deviceInfo inSecret:secretKey];
+    
+    NSLog(@"encrypt with AES: %@", encryptedDeviceInfo);
 }
 
 @end

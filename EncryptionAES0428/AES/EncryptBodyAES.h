@@ -11,7 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface EncryptBodyAES : NSObject
 
--(NSString *)generateRandomSecret;
+-(NSString *)generateRandomSecret;//params secret
+-(NSData *)dictionaryToJSON;//params deviceInfo
+
+-(NSString *)encryptDeviceInfo:(NSData *)deviceInfo inSecret:(NSString *)secret;
 
 @end
 
